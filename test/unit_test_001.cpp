@@ -1,7 +1,7 @@
 //
 //    FILE: unit_test_001.cpp
 //  AUTHOR: Rob Tillaart
-//    DATE: 2021-01-03
+//    DATE: 2026-02-01
 // PURPOSE: unit tests for the RunningMinMax
 //          https://github.com/RobTillaart/RunningMinMax
 //          https://github.com/Arduino-CI/arduino_ci/blob/master/REFERENCE.md
@@ -81,7 +81,7 @@ unittest(test_basic_add)
   assertEqualFloat(40, samples.getAverage(), 0.0001);
   assertEqualFloat(100, samples.getMaximum(), 0.0001);
 
-  samples.clear();
+  samples.reset();
   assertEqual(5, samples.getSize());
   assertEqual(0, samples.getCount());
 }
