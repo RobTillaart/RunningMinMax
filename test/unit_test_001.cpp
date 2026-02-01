@@ -68,7 +68,7 @@ unittest(test_basic_add)
     assertEqual(cnt, samples.getCount());
   }
   assertEqual(5, samples.getSize());
-  assertEqualFloat(20, samples.getMinimum(), 0.0001);
+  assertEqualFloat(0, samples.getMinimum(), 0.0001);
   assertEqualFloat(20, samples.getAverage(), 0.0001);
   assertEqualFloat(40, samples.getMaximum(), 0.0001);
 
@@ -77,7 +77,7 @@ unittest(test_basic_add)
   assertEqual(5, samples.getSize());
   assertEqual(5, samples.getCount());
 
-  assertEqualFloat(30, samples.getMinimum(), 0.0001);
+  assertEqualFloat(10, samples.getMinimum(), 0.0001);
   assertEqualFloat(40, samples.getAverage(), 0.0001);
   assertEqualFloat(100, samples.getMaximum(), 0.0001);
 
